@@ -1,0 +1,45 @@
+﻿Go is a high-level, general-purpose programming language that is statically-typed and compiled. It is known for the simplicity of its syntax and the efficiency of development that it enables through the inclusion of a large standard library supplying many needs for common projects.[12] It was designed at Google[13] in 2007 by Robert Griesemer, Rob Pike, and Ken Thompson, and publicly announced in November 2009.[4] It is syntactically similar to C, but also has garbage collection, structural typing,[7] and CSP-style concurrency.[14] It is often referred to as Golang to avoid ambiguity and because of its former domain name, golang.org, but its proper name is Go.[15]
+
+There are two major implementations:
+
+The original, self-hosting[16] compiler toolchain, initially developed inside Google;[17]
+A frontend written in C++, called gofrontend,[18] originally a GCC frontend, providing gccgo, a GCC-based Go compiler;[19] later extended to also support LLVM, providing an LLVM-based Go compiler called gollvm.[20]
+A third-party source-to-source compiler, GopherJS,[21] transpiles Go to JavaScript for front-end web development.
+
+History
+Go was designed at Google in 2007 to improve programming productivity in an era of multicore, networked machines and large codebases.[22] The designers wanted to address criticisms of other languages in use at Google, but keep their useful characteristics:[23]
+
+Static typing and run-time efficiency (like C)
+Readability and usability (like Python)[24]
+High-performance networking and multiprocessing
+Its designers were primarily motivated by their shared dislike of C++.[25][26][27]
+
+Go was publicly announced in November 2009,[28] and version 1.0 was released in March 2012.[29][30] Go is widely used in production at Google[31] and in many other organizations and open-source projects.
+
+In retrospect the Go authors judged Go to be successful due to the overall engineering work around the language, including the runtime support for the language's concurrency feature.
+
+Although the design of most languages concentrates on innovations in syntax, semantics, or typing, Go is focused on the software development process itself. ... The principal unusual property of the language itself—concurrency—addressed problems that arose with the proliferation of multicore CPUs in the 2010s. But more significant was the early work that established fundamentals for packaging, dependencies, build, test, deployment, and other workaday tasks of the software development world, aspects that are not usually foremost in language design.[32]
+
+Branding and styling
+
+Go's mascot is a cartoon gopher.
+The gopher mascot was introduced in 2009 for the open source launch of the language. Renée French, who had designed the rabbit mascot for Plan 9, adapted the gopher from an earlier WFMU T-shirt design.[33]
+
+In November 2016, the Go and Go Mono fonts were released by type designers Charles Bigelow and Kris Holmes specifically for use by the Go project. Go is a humanist sans-serif resembling Lucida Grande, and Go Mono is monospaced. Both fonts adhere to the WGL4 character set and were designed to be legible with a large x-height and distinct letterforms. Both Go and Go Mono adhere to the DIN 1450 standard by having a slashed zero, lowercase l with a tail, and an uppercase I with serifs.[34][35]
+
+In April 2018, the original logo was redesigned by brand designer Adam Smith. The new logo is a modern, stylized GO slanting right with trailing streamlines. The gopher mascot remained the same.[36]
+
+Generics
+The lack of support for generic programming in initial versions of Go drew considerable criticism.[37] The designers expressed an openness to generic programming and noted that built-in functions were in fact type-generic, but are treated as special cases; Pike called this a weakness that might be changed at some point.[38] The Google team built at least one compiler for an experimental Go dialect with generics, but did not release it.[39]
+
+In August 2018, the Go principal contributors published draft designs for generic programming and error handling and asked users to submit feedback.[40][41] However, the error handling proposal was eventually abandoned.[42]
+
+In June 2020, a new draft design document[43] was published that would add the necessary syntax to Go for declaring generic functions and types. A code translation tool, go2go, was provided to allow users to try the new syntax, along with a generics-enabled version of the online Go Playground.[44]
+
+Generics were finally added to Go in version 1.18 on March 15, 2022.[45]
+
+Versioning
+Go 1 guarantees compatibility[46] for the language specification and major parts of the standard library. All versions up through the current Go 1.24 release[47] have maintained this promise.
+
+Go uses a go1.[major].[patch] versioning format, such as go1.24.0 and each major Go release is supported until there are two newer major releases. Unlike most software, Go calls the second number in a version the major, i.e., in go1.24.0 the 24 is the major version.[48] This is because Go plans to never reach 2.0, prioritizing backwards compatibility over potential breaking changes.[49]
+    return 0;
