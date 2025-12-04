@@ -9,4 +9,5 @@ add_executable(search_engine src/main.cpp
         include/inverted_index.h
         src/inverted_index.cpp
         include/searcher.h
-        src/searcher.cpp)
+        src/searcher.cpp
+        include/httplib.h)
